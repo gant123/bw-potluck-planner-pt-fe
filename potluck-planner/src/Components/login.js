@@ -1,5 +1,5 @@
 import React from 'react';
-
+import img from '../img/undraw_eating_together_tjhx.svg';
 export class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +11,7 @@ export class Login extends React.Component {
         <div className="header">Login</div>
         <div className="content">
           <div className="image">
-            <img src="https://image.shutterstock.com/image-vector/cute-smiling-welsh-corgi-dog-260nw-1014458896.jpg" />
+            <img src={img} />
           </div>
           <div className="form">
             <div className="form-group">

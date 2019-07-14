@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../img/undraw_tasting_de22.svg';
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -88,10 +89,10 @@ export class Register extends React.Component {
 
     return (
       <div className="base-container" ref={this.props.containerRef}>
-        <h1>Create Account</h1>
+        <h1 className="header">Create Account</h1>
         <div className="content">
           <div className="image">
-            <img src="https://image.shutterstock.com/image-vector/cute-smiling-welsh-corgi-dog-260nw-1014458896.jpg" />
+            <img src={img} />
           </div>
           <form className="form" onSubmit={this.handleSubmit} noValidate>
             <div className="firstName form-group">
@@ -151,7 +152,9 @@ export class Register extends React.Component {
               )}
             </div>
             <div className="createAccount">
-              <button type="submit">Create Account</button>
+              <button type="submit" class="btn">
+                Create Account
+              </button>
             </div>
           </form>
         </div>
