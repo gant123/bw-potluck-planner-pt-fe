@@ -81,7 +81,9 @@ export class Register extends React.Component {
         break;
     }
 
-    this.setState({ formErrors, [name]: value }, () => console.log(this.state));
+    this.setState({ formErrors, [name]: value }, () =>
+      console.log(this.state.formErrors)
+    );
   };
 
   render() {

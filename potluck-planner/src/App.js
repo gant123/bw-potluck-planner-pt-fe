@@ -6,28 +6,11 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Login, Register } from './Components/index';
 
-// function App() {
-//   return (
-//     <Router>
-//       <div>
-//         <NavBar />
-//         <Switch>
-//           <Route path="/" exact component={Home} />
-//           <Route path="/test" exact component={Test} />
-//           <Route path="/login-page" exact component={LoginPage} />
-//         </Switch>
-//       </div>
-//     </Router>
-//   );
-// }
-
-// export default App;
-
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLogginActive: true
+      isLogginActive: false
     };
   }
 
