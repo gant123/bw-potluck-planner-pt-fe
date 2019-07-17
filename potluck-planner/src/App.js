@@ -18,7 +18,7 @@ class App extends React.Component {
     //Add .right by default
     this.rightSide.classList.add('right');
   }
-
+  //asdfioj
   changeState() {
     const { isLogginActive } = this.state;
 
@@ -45,7 +45,21 @@ class App extends React.Component {
           onClick={this.changeState.bind(this)}
         />
         <div className="App">
-          <div className="login">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Login" component={Login} />
+          <Route exact path="/sign-up" component={Register} />
+          {/* <div className="container" ref={ref => (this.container = ref)}>
+            <Route
+              exact
+              path="/test"
+              component={
+                isLogginActive && (
+                  <Login containerRef={ref => (this.current = ref)} />
+                )
+              }
+            />
+          </div> */}
+          {/* <div className="login">
             <div className="container" ref={ref => (this.container = ref)}>
               {isLogginActive && (
                 <Login containerRef={ref => (this.current = ref)} />
@@ -60,7 +74,7 @@ class App extends React.Component {
               containerRef={ref => (this.rightSide = ref)}
               onClick={this.changeState.bind(this)}
             />
-          </div>
+          </div> */}
         </div>
       </Router>
     );
